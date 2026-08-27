@@ -1,6 +1,6 @@
 public class ClassroomMain {
     public static void main(String[] args) {
-        Classroom c = new Classroom("Ms. Leah", 40, 25);
+        Classroom c = new Classroom("Mr. Leah", 40, 25);
         Classroom c1 = new Classroom("Mr. Morris");
 
 
