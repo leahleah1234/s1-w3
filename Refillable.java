@@ -1,23 +1,29 @@
 public class Refillable {
-    private int amount; 
+    private int amount;
+    private int totalUse;
+    private int totalTimesUsedHappened;
 
-    public Refillable(){
+    public Refillable() {
         amount = 10;
     }
 
-    public Refillable(int amt){
-        amount = amt; 
+    public Refillable(int amt) {
+        amount = amt;
     }
 
-    public void increase(int a){
+    public void increase(int a) {
         amount += a;
     }
 
-     public void decrease (int a){
+    public void decrease(int a) {
         amount -= a;
     }
 
-    public int getAmount(){
-        return amount; 
+    public double averageUse() {
+        return totalUse * 1.0/ totalTimesUsedHappened;
+    }
+
+    public int getAmount() {
+        return amount;
     }
 }
